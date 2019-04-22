@@ -1,0 +1,65 @@
+* {box-sizing: border-box;}
+
+.accNav {
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+.accNav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.accNav a:hover {
+    background-color: aquamarine;
+    color: white;
+}
+
+.accNav a.active {
+    background-color: plum;
+    color: white;
+}
+
+.accNav .login-container {
+    float: right;
+}
+
+.accNav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 150px;
+}
+
+.accNav .login-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: lightgreen;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.accNav .login-container button:hover {
+    background: lightcoral;
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    border-color: blueviolet;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 0;
+}
