@@ -1,3 +1,97 @@
+body{
+    background-color: lightsalmon;
+}
+
+
+
+h1{
+    color: aqua;
+    font-size: 2.0em;
+    margin: 0.5em 0em 0.5em 0em;
+    padding: 0px;
+}
+
+h2{
+    color: lightgreen;
+    font-size: 1.7em;
+    margin: 0.5em 0em 0.5em 0em;
+    padding: 0px;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: black;
+    padding: 0px;
+    margin: 0px 0.5em 0.75px 0em;
+}
+
+ol{
+    font-size: 1.4em;
+    padding: 0px 0px 0px 1.0em;
+    margin: 0px 0px 0px 1.0em;
+}
+
+ol li{
+    margin: 0px;
+    padding: 0px 0px 0px 0.2em;
+}
+
+a, a:visited{
+    color: plum;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+hr{
+    padding: 0px; 
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+
+.contentwrapper{
+    margin: 0 auto; 
+    max-width: 1170px;
+    padding: 0px 0px 0px 0.3em;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+div.clear{
+    clear: both;
+    font-size: 1%;
+}
+
+@-webkit-keyframes bounce{
+    20% {background-color: blue;}
+    53% {background-color: green;}
+    80% {background-color: purple;}
+
+}
+
+header{
+    padding: 2.5em 0 0.5em;
+    margin: 0 0 2.0em;
+    background-image: url("") center 0px;
+}
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    border-color: blueviolet;
+    font-size: 80px;
+    letter-spacing: 10px;
+    margin: 50px 50px 0px 350px;
+    padding: 10px;
+}
+
 * {box-sizing: border-box;}
 
 .accNav {
@@ -8,7 +102,7 @@
 .accNav a {
     float: left;
     display: block;
-    color: black;
+    color: lightsalmon;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -17,7 +111,7 @@
 
 .accNav a:hover {
     background-color: aquamarine;
-    color: white;
+    color: lightseagreen;
 }
 
 .accNav a.active {
@@ -52,14 +146,121 @@
     background: lightcoral;
 }
 
-@media screen and (max-width: 600px) {
-    
+section#sidebar{
+    width: 238px;
+    height: 1000px;
+    float: right;
+    position: relative;
+    display: block;
+    z-index: 1;
+    background-color: lightseagreen;
+    margin: 1.5em 0 3.0em 1.5em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-left: rgb(43, 169, 127) solid 5px;
 }
-header h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: aqua;
-    border-color: blueviolet;
-    font-size: 40px;
-    letter-spacing: 10px;
+
+section#sidebar article{
+    display: block;
+}
+
+section#sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lightgreen;
+    display: block;
+}
+
+section#sidebar a:hover {
+    color: lightskyblue;
+}
+
+section #main {
+    margin-left: 160px;
+    padding: 0px 10px;
+    background-color: rgba(252,251,243,0.7);
+    display: inline-block;
+    border-radius: 10em;
+    box-shadow: 1px 1px 5px #777;
+}
+
+section div.panel{
+    float: horizontal;
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    margin: 1em 0.5em 2.0em 0.5em;
+    padding: 10px;
+    background-color: lightseagreen;
+    border: plum solid 1px;
+    border-radius: 10px;
+   }
+   
+   section div.panel img.Coding {
+    width: 100%;
+   } 
+   footer {
+    background-color:blueviolet;
+    height: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
     margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+button {
+    color: lightseagreen;
+    background-color: #FFF;
+    display: inline-block;
+    margin: 0 0.75em 0 0;
+    padding: 0.2em 0.5em;
+    border: 1px solid lightseagreen;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: #FBF3DB;
+    border: 1px solid #745b2f;
+}    
+
+.bounce{
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+@-keyframes bounce{
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
 }
